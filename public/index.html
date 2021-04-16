@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<link rel="icon" href="https://img.icons8.com/cute-clipart/35/000000/chat.png" type='image/png'>
+		<!-- <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
+		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff"> -->
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Chat With Me App</title>
+	</head>
+	<body>
+		<header class="join-header">
+			<img src="https://img.icons8.com/cute-clipart/35/000000/chat.png"/>
+			<h1>Chat With Me</h1>
+		</header>
+		<form action="chat.html" id="form">
+			<div class="wrapper">
+				<div class="forInp">
+					<!-- <i class="far fa-user"></i> -->
+					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="50" height="50"
+viewBox="0 0 226 226"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g><rect x="8" y="23" transform="scale(4.70833,4.70833)" width="12" height="6" fill="#bf360c"></rect><path d="M197.75,82.39583c0,3.76667 -3.29583,7.0625 -7.0625,7.0625c-3.76667,0 -7.0625,-3.29583 -7.0625,-7.0625c0,-3.76667 3.29583,-7.0625 7.0625,-7.0625c3.76667,0 7.0625,3.29583 7.0625,7.0625M136.54167,82.39583c0,-3.76667 -3.29583,-7.0625 -7.0625,-7.0625c-3.76667,0 -7.0625,3.29583 -7.0625,7.0625c0,3.76667 3.29583,7.0625 7.0625,7.0625c3.76667,0 7.0625,-3.29583 7.0625,-7.0625" fill="#ef8d3c"></path><path d="M177.975,122.41667v0l-17.89167,3.76667l-17.89167,-3.76667c0,0 -38.60833,7.0625 -38.60833,47.08333h113c0,-39.55 -38.60833,-47.08333 -38.60833,-47.08333" fill="#2196f3"></path><path d="M160.08333,141.25c-18.83333,0 -18.83333,-18.83333 -18.83333,-18.83333v-18.83333h37.66667v18.83333c0,0 0,18.83333 -18.83333,18.83333z" fill="#ef8d3c"></path><path d="M193.04167,56.5c0,-27.77917 -65.91667,-17.89167 -65.91667,0v28.72083c0,17.89167 14.59583,32.4875 32.95833,32.4875c18.3625,0 32.95833,-14.59583 32.95833,-32.4875z" fill="#ffaa45"></path><path d="M84.75,141.25c0,0 0,18.83333 -18.83333,18.83333c-18.83333,0 -18.83333,-18.83333 -18.83333,-18.83333" fill="#ff9800"></path><path d="M83.80833,141.25v0l-17.89167,3.76667l-17.89167,-3.76667c0,0 -38.60833,7.0625 -38.60833,47.08333h113c0,-39.55 -38.60833,-47.08333 -38.60833,-47.08333" fill="#66bb6a"></path><path d="M160.55417,150.66667c14.59583,0 26.36667,-10.82917 27.77917,-24.48333c-4.2375,-1.88333 -7.53333,-2.825 -9.41667,-3.29583c0,10.35833 -8.475,18.3625 -18.83333,18.3625c-10.35833,0 -18.83333,-8.475 -18.83333,-18.3625c-1.88333,0.47083 -5.17917,1.4125 -9.41667,3.29583c2.35417,13.65417 14.125,24.48333 28.72083,24.48333z" fill="#0d47a1"></path><path d="M65.91667,160.08333c-18.83333,0 -18.83333,-18.83333 -18.83333,-18.83333v-18.83333h37.66667v18.83333c0,0 0,18.83333 -18.83333,18.83333z" fill="#ff9800"></path><path d="M98.875,83.3375c0,-27.77917 -65.91667,-17.89167 -65.91667,0v20.71667c0,17.89167 14.59583,32.4875 32.95833,32.4875c18.3625,0 32.95833,-14.59583 32.95833,-32.4875z" fill="#ffb74d"></path><path d="M65.91667,169.5c14.59583,0 26.36667,-10.82917 27.77917,-24.48333c-4.2375,-1.88333 -7.53333,-2.825 -9.41667,-3.29583c0,10.35833 -8.475,18.3625 -18.83333,18.3625c-10.35833,0 -18.83333,-8.475 -18.83333,-18.3625c-1.88333,0.47083 -5.17917,1.4125 -9.41667,3.29583c2.35417,13.65417 14.125,24.48333 28.72083,24.48333z" fill="#2e7d32"></path><path d="M160.08333,28.25c-23.07083,0 -37.66667,20.24583 -37.66667,38.60833v8.475l9.41667,9.41667v-18.83333l43.31667,-14.125l13.18333,14.125v18.83333l9.41667,-9.41667v-3.76667c0,-15.06667 -3.76667,-32.01667 -22.6,-35.78333l-3.76667,-7.53333z" fill="#424242"></path><path d="M65.91667,51.79167c-47.08333,0 -47.08333,65.91667 -47.08333,65.91667l18.83333,18.83333v-42.375l43.31667,-23.54167l13.18333,14.125v51.79167l18.83333,-18.83333c0,0 0,-61.20833 -32.95833,-61.20833l-4.70833,-4.70833z" fill="#ff5722"></path><path d="M75.33333,98.875c0,-2.825 1.88333,-4.70833 4.70833,-4.70833c2.825,0 4.70833,1.88333 4.70833,4.70833c0,2.825 -1.88333,4.70833 -4.70833,4.70833c-2.825,0 -4.70833,-1.88333 -4.70833,-4.70833M47.08333,98.875c0,2.825 1.88333,4.70833 4.70833,4.70833c2.825,0 4.70833,-1.88333 4.70833,-4.70833c0,-2.825 -1.88333,-4.70833 -4.70833,-4.70833c-2.825,0 -4.70833,1.88333 -4.70833,4.70833" fill="#784719"></path><path d="M169.5,80.04167c0,-2.825 1.88333,-4.70833 4.70833,-4.70833c2.825,0 4.70833,1.88333 4.70833,4.70833c0,2.825 -1.88333,4.70833 -4.70833,4.70833c-2.825,0 -4.70833,-1.88333 -4.70833,-4.70833" fill="#784719"></path><path d="M141.25,80.04167c0,2.825 1.88333,4.70833 4.70833,4.70833c2.825,0 4.70833,-1.88333 4.70833,-4.70833c0,-2.825 -1.88333,-4.70833 -4.70833,-4.70833c-2.825,0 -4.70833,1.88333 -4.70833,4.70833" fill="#784719"></path></g></g></svg>
+					<input type="text" class="homeInput" id="username" name="username" placeholder="First Name" required>
+				</div>
+				<div class="forInp">
+					<img src="https://img.icons8.com/color/50/000000/room.png"/>
+					
+					<input type="text" class="homeInput" id="room" name="room" placeholder="Room Name" required>
+				</div>
+				<button class='btn'>Next</button>
+			</div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://img.icons8.com/cute-clipart/35/000000/chat.png" type='image/png'>
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"> -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/551b54a077.js" crossorigin="anonymous"></script>
+    
+    <!-- <script defer src="js/app.js"></script> -->
+
+    <link href="Emojis/css/emojionearea.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="Emojis/js/emojionearea.min.js"></script>
+    <script src="push js/push.min.js"></script>
+    <script src="push js/serviceWorker.min.js"></script>
+
+    <title>Chat With Me</title>
+</head>
+<body id="body">
+    <header>
+        <img id='pcLogo' src="https://img.icons8.com/cute-clipart/35/000000/chat.png"/>
+        <h1>Chat With Me</h1>
+        <form action="/index.html">
+            <button class="">
+                <abbr title="Leave Room">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="45" height="45"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><defs><radialGradient cx="86.00269" cy="86" r="73.79606" gradientUnits="userSpaceOnUse" id="color-1_119068_gr1"><stop offset="0" stop-color="#efdcb1"></stop><stop offset="0" stop-color="#efdcb1"></stop><stop offset="0.092" stop-color="#f2e0b9"></stop><stop offset="0.415" stop-color="#f9eccf"></stop><stop offset="0.724" stop-color="#fdf4dc"></stop><stop offset="1" stop-color="#fff6e1"></stop></radialGradient><linearGradient x1="80.625" y1="162.76575" x2="80.625" y2="14.67106" gradientUnits="userSpaceOnUse" id="color-2_119068_gr2"><stop offset="0" stop-color="#42bfec"></stop><stop offset="0.441" stop-color="#2aa4f4"></stop><stop offset="1" stop-color="#2aa4f4"></stop></linearGradient><linearGradient x1="86" y1="157.24831" x2="86" y2="118.12906" gradientUnits="userSpaceOnUse" id="color-3_119068_gr3"><stop offset="0" stop-color="#2aa4f4"></stop><stop offset="1" stop-color="#b2eaff"></stop></linearGradient><linearGradient x1="103.46875" y1="157.24831" x2="103.46875" y2="118.12906" gradientUnits="userSpaceOnUse" id="color-4_119068_gr4"><stop offset="0" stop-color="#2aa4f4"></stop><stop offset="1" stop-color="#b2eaff"></stop></linearGradient><linearGradient x1="53.75" y1="156.27006" x2="53.75" y2="12.37056" gradientUnits="userSpaceOnUse" id="color-5_119068_gr5"><stop offset="0" stop-color="#5ec9ef"></stop><stop offset="0.495" stop-color="#7ad7f5"></stop><stop offset="1" stop-color="#9ae8fc"></stop></linearGradient><linearGradient x1="112.875" y1="148.1565" x2="112.875" y2="34.80313" gradientUnits="userSpaceOnUse" id="color-6_119068_gr6"><stop offset="0" stop-color="#ff0000"></stop><stop offset="0.365" stop-color="#03448d"></stop><stop offset="0.734" stop-color="#007eff"></stop><stop offset="1" stop-color="#0082ff"></stop></linearGradient><linearGradient x1="48.375" y1="148.1565" x2="48.375" y2="34.80313" gradientUnits="userSpaceOnUse" id="color-7_119068_gr7"><stop offset="0" stop-color="#ff0000"></stop><stop offset="0.365" stop-color="#03448d"></stop><stop offset="0.734" stop-color="#007eff"></stop><stop offset="1" stop-color="#0082ff"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M155.875,110.1875h6.18662c5.09281,0 9.65888,-3.81356 9.92494,-8.901c0.28487,-5.42337 -4.03125,-9.9115 -9.39281,-9.9115h-9.16706c-2.59344,0 -5.00144,-1.73344 -5.504,-4.2785c-0.11019,-9.159 12.56944,-6.33175 15.78637,-6.46613c4.07963,-0.172 7.75344,-3.02613 8.2345,-7.08156c0.57781,-4.89394 -3.23037,-9.04881 -8.00606,-9.04881h-49.18662c-5.09281,0 -12.34638,-3.81356 -12.61244,-8.901c-0.28487,-5.42337 4.03125,-9.9115 9.39281,-9.9115h38.96875c5.09281,0 9.65887,-3.81356 9.92494,-8.901c0.28487,-5.42338 -4.02856,-9.9115 -9.39281,-9.9115h-22.03213h-16.125h-64.5v10.75h-27.68662c-5.09281,0 -9.65887,3.81356 -9.92494,8.901c-0.28488,5.42337 4.03125,9.9115 9.39281,9.9115h28.21875v13.4375h-33.59375c-5.17344,0 -9.40625,4.23281 -9.40625,9.40625c0,5.17344 4.23281,9.40625 9.40625,9.40625h9.40625h14.78125c3.71144,0 6.71875,3.00731 6.71875,6.71875c0,3.71144 -3.00731,6.71875 -6.71875,6.71875h-30.44937c-4.3645,0 -8.28019,3.268 -8.50594,7.62981c-0.24456,4.64938 3.45344,8.49519 8.04906,8.49519h13.14994c2.67675,0 5.16,1.83019 5.59,4.472c0.54556,3.36744 -2.03712,6.278 -5.30244,6.278h-7.60562c-4.3645,0 -8.28019,3.268 -8.50594,7.62981c-0.24456,4.64938 3.45344,8.49519 8.04906,8.49519h34.9375h21.5h59.125v-2.6875h26.47725c4.25163,0 8.07056,-3.12287 8.43069,-7.35837c0.40581,-4.78375 -3.36475,-8.78813 -8.06787,-8.76663c-2.76275,0.01075 -5.46369,-1.16637 -6.80475,-3.58244c-3.46419,-6.22694 0.94869,-12.54256 6.83969,-12.54256z" fill="url(#color-1_119068_gr1)"></path><path d="M115.5625,155.875h-69.875c-8.90637,0 -16.125,-7.21863 -16.125,-16.125v-107.5c0,-8.90638 7.21863,-16.125 16.125,-16.125h69.875c8.90637,0 16.125,7.21862 16.125,16.125v107.5c0,8.90637 -7.21863,16.125 -16.125,16.125z" fill="url(#color-2_119068_gr2)"></path><circle cx="32" cy="49" transform="scale(2.6875,2.6875)" r="2" fill="url(#color-3_119068_gr3)"></circle><path d="M131.6875,126.3125v13.4375c0,0.5375 -0.02687,1.04812 -0.08062,1.55875c-0.02687,0.43 -0.1075,0.88687 -0.18813,1.31688c-0.05375,0.40312 -0.16125,0.77937 -0.26875,1.1825v0.02687c-0.1075,0.43 -0.24188,0.86 -0.40313,1.29c-2.17687,6.26188 -8.17,10.75 -15.18437,10.75h-34.9375c-2.95625,0 -5.375,-2.41875 -5.375,-5.375c0,-0.215 0,-0.40312 0.02688,-0.59125c0.13438,-1.23625 0.69875,-2.365 1.55875,-3.19813c0.9675,-0.99437 2.31125,-1.58562 3.78938,-1.58562h36.28125c2.23062,0 4.03125,-1.80062 4.03125,-4.03125c0,-2.23063 -1.80063,-4.03125 -4.03125,-4.03125h-12.09375c-2.95625,0 -5.375,-2.41875 -5.375,-5.375c0,-2.95625 2.41875,-5.375 5.375,-5.375z" fill="url(#color-4_119068_gr4)"></path><path d="M52.40625,56.4375h-22.84375v-24.1875c0,-8.90638 7.21863,-16.125 16.125,-16.125h17.46875c3.71144,0 6.71875,3.00731 6.71875,6.71875v0c0,3.71144 -3.00731,6.71875 -6.71875,6.71875h-13.4375c-3.71144,0 -6.71875,3.00731 -6.71875,6.71875v0c0,3.71144 3.00731,6.71875 6.71875,6.71875h2.6875c3.71144,0 6.71875,3.00731 6.71875,6.71875v0c0,3.71144 -3.00731,6.71875 -6.71875,6.71875zM72.5625,45.6875c-2.96969,0 -5.375,2.40531 -5.375,5.375c0,2.96969 2.40531,5.375 5.375,5.375c2.96969,0 5.375,-2.40531 5.375,-5.375c0,-2.96969 -2.40531,-5.375 -5.375,-5.375z" fill="url(#color-5_119068_gr5)"></path><path d="M120.9375,59.41794v18.51956h-45.6875c-4.45319,0 -8.0625,3.60931 -8.0625,8.0625c0,4.45319 3.60931,8.0625 8.0625,8.0625h45.6875v18.51956c0,4.94769 5.57925,7.51156 8.99775,4.13606l26.92875,-26.58206c2.26556,-2.236 2.26556,-6.03612 0,-8.27213l-26.92875,-26.58206c-3.4185,-3.3755 -8.99775,-0.80894 -8.99775,4.13606z" fill="url(#color-6_119068_gr6)"></path><circle cx="18" cy="32" transform="scale(2.6875,2.6875)" r="3" fill="url(#color-7_119068_gr7)"></circle></g></g></svg>
+                </abbr>
+            </button>
+        </form>
+        <img id="phoneLogo" src="https://img.icons8.com/cute-clipart/35/000000/chat.png"/>
+        <div id='hb' onclick="aside()">
+            <div class="lines fline"></div>
+            <div class="lines sline"></div>
+        </div>
+    </header>
+
+    <main class="chat-main">
+        <div id='aside' class="chat-sidebar">
+            <h3>
+                <img src="https://img.icons8.com/color/50/000000/room.png"/>
+                Room:
+            </h3>
+            <h2 id="room-name"></h2>
+            <h3>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="50" height="50"
+                viewBox="0 0 226 226"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g><rect x="8" y="23" transform="scale(4.70833,4.70833)" width="12" height="6" fill="#bf360c"></rect><path d="M197.75,82.39583c0,3.76667 -3.29583,7.0625 -7.0625,7.0625c-3.76667,0 -7.0625,-3.29583 -7.0625,-7.0625c0,-3.76667 3.29583,-7.0625 7.0625,-7.0625c3.76667,0 7.0625,3.29583 7.0625,7.0625M136.54167,82.39583c0,-3.76667 -3.29583,-7.0625 -7.0625,-7.0625c-3.76667,0 -7.0625,3.29583 -7.0625,7.0625c0,3.76667 3.29583,7.0625 7.0625,7.0625c3.76667,0 7.0625,-3.29583 7.0625,-7.0625" fill="#ef8d3c"></path><path d="M177.975,122.41667v0l-17.89167,3.76667l-17.89167,-3.76667c0,0 -38.60833,7.0625 -38.60833,47.08333h113c0,-39.55 -38.60833,-47.08333 -38.60833,-47.08333" fill="#2196f3"></path><path d="M160.08333,141.25c-18.83333,0 -18.83333,-18.83333 -18.83333,-18.83333v-18.83333h37.66667v18.83333c0,0 0,18.83333 -18.83333,18.83333z" fill="#ef8d3c"></path><path d="M193.04167,56.5c0,-27.77917 -65.91667,-17.89167 -65.91667,0v28.72083c0,17.89167 14.59583,32.4875 32.95833,32.4875c18.3625,0 32.95833,-14.59583 32.95833,-32.4875z" fill="#ffaa45"></path><path d="M84.75,141.25c0,0 0,18.83333 -18.83333,18.83333c-18.83333,0 -18.83333,-18.83333 -18.83333,-18.83333" fill="#ff9800"></path><path d="M83.80833,141.25v0l-17.89167,3.76667l-17.89167,-3.76667c0,0 -38.60833,7.0625 -38.60833,47.08333h113c0,-39.55 -38.60833,-47.08333 -38.60833,-47.08333" fill="#66bb6a"></path><path d="M160.55417,150.66667c14.59583,0 26.36667,-10.82917 27.77917,-24.48333c-4.2375,-1.88333 -7.53333,-2.825 -9.41667,-3.29583c0,10.35833 -8.475,18.3625 -18.83333,18.3625c-10.35833,0 -18.83333,-8.475 -18.83333,-18.3625c-1.88333,0.47083 -5.17917,1.4125 -9.41667,3.29583c2.35417,13.65417 14.125,24.48333 28.72083,24.48333z" fill="#0d47a1"></path><path d="M65.91667,160.08333c-18.83333,0 -18.83333,-18.83333 -18.83333,-18.83333v-18.83333h37.66667v18.83333c0,0 0,18.83333 -18.83333,18.83333z" fill="#ff9800"></path><path d="M98.875,83.3375c0,-27.77917 -65.91667,-17.89167 -65.91667,0v20.71667c0,17.89167 14.59583,32.4875 32.95833,32.4875c18.3625,0 32.95833,-14.59583 32.95833,-32.4875z" fill="#ffb74d"></path><path d="M65.91667,169.5c14.59583,0 26.36667,-10.82917 27.77917,-24.48333c-4.2375,-1.88333 -7.53333,-2.825 -9.41667,-3.29583c0,10.35833 -8.475,18.3625 -18.83333,18.3625c-10.35833,0 -18.83333,-8.475 -18.83333,-18.3625c-1.88333,0.47083 -5.17917,1.4125 -9.41667,3.29583c2.35417,13.65417 14.125,24.48333 28.72083,24.48333z" fill="#2e7d32"></path><path d="M160.08333,28.25c-23.07083,0 -37.66667,20.24583 -37.66667,38.60833v8.475l9.41667,9.41667v-18.83333l43.31667,-14.125l13.18333,14.125v18.83333l9.41667,-9.41667v-3.76667c0,-15.06667 -3.76667,-32.01667 -22.6,-35.78333l-3.76667,-7.53333z" fill="#424242"></path><path d="M65.91667,51.79167c-47.08333,0 -47.08333,65.91667 -47.08333,65.91667l18.83333,18.83333v-42.375l43.31667,-23.54167l13.18333,14.125v51.79167l18.83333,-18.83333c0,0 0,-61.20833 -32.95833,-61.20833l-4.70833,-4.70833z" fill="#ff5722"></path><path d="M75.33333,98.875c0,-2.825 1.88333,-4.70833 4.70833,-4.70833c2.825,0 4.70833,1.88333 4.70833,4.70833c0,2.825 -1.88333,4.70833 -4.70833,4.70833c-2.825,0 -4.70833,-1.88333 -4.70833,-4.70833M47.08333,98.875c0,2.825 1.88333,4.70833 4.70833,4.70833c2.825,0 4.70833,-1.88333 4.70833,-4.70833c0,-2.825 -1.88333,-4.70833 -4.70833,-4.70833c-2.825,0 -4.70833,1.88333 -4.70833,4.70833" fill="#784719"></path><path d="M169.5,80.04167c0,-2.825 1.88333,-4.70833 4.70833,-4.70833c2.825,0 4.70833,1.88333 4.70833,4.70833c0,2.825 -1.88333,4.70833 -4.70833,4.70833c-2.825,0 -4.70833,-1.88333 -4.70833,-4.70833" fill="#784719"></path><path d="M141.25,80.04167c0,2.825 1.88333,4.70833 4.70833,4.70833c2.825,0 4.70833,-1.88333 4.70833,-4.70833c0,-2.825 -1.88333,-4.70833 -4.70833,-4.70833c-2.825,0 -4.70833,1.88333 -4.70833,4.70833" fill="#784719"></path></g></g></svg>
+                 Members:
+            </h3>
+            <ul id="users"></ul>
+        </div>
+
+        <div class="container" id="container"></div>
+    </main>
+
+    <section id="colorPicker" class="colorPicker">
+        <div id="tags" class='img'>
+            <button id='image-btn' class="tags active">Images</button>
+            <button id='color-btn' class="tags">Colors</button>
+        </div>
+
+        <div id="images" class="active">
+            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?superbikes`)' src="https://source.unsplash.com/1600x900/?superbikes" alt="Image">
+            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?cameras`)' src="https://source.unsplash.com/1600x900/?cameras" alt="Image">
+            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?smartphones`)' src="https://source.unsplash.com/1600x900/?smartphones" alt="Image">
+            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?computer,apple`)' src="https://source.unsplash.com/1600x900/?computer,apple" alt="Image">
+            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?gaming,gta`)' src="https://source.unsplash.com/1600x900/?gaming,gta" alt="Image">
+            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?girls`)' src="https://source.unsplash.com/1600x900/?girls" alt="Image">
+            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?artistic`)' src="https://source.unsplash.com/1600x900/?artistic" alt="Image">
+            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?cars`)' src="https://source.unsplash.com/1600x900/?cars" alt="Image">
+            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?landmarks,statues`)' src="https://source.unsplash.com/1600x900/?landmarks,statues" alt="Image">
+            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?mythology,god`)' src="https://source.unsplash.com/1600x900/?mythology,god" alt="Image">
+            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/collection/190727/1600x900`)' src="https://source.unsplash.com/collection/190727/1600x900" alt="Image">
+            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/daily`)' src="https://source.unsplash.com/daily" alt="Image">
+            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/weekly?car`)' src="https://source.unsplash.com/weekly?car" alt="Image">
+            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/random/`)' src="https://source.unsplash.com/random/" alt="Image">
+        </div>
+
+        <div id="colors">
+            <div id="lightBlue" class="box solid" onclick="changeColor('rgb(77, 182, 214)')"></div>
+            <div id="pink" class="box solid" onclick="changeColor('rgb(214, 77, 203)')"></div>
+            <div id="dark-blue-from-sidebar" class="box solid" onclick="changeColor('rgb(34, 34, 187)')"></div>
+            <div id="lightGreen" class="box solid" onclick="changeColor('#1ca69d')"></div>
+            <div id="white" class="box solid" onclick="changeColor('white')"></div>
+            <div id="orange" class="box solid" onclick="changeColor('orange')"></div>
+            <div id="cream" class="box solid" onclick="changeColor('#f9ccaa')"></div>
+            <div id="light-blue-from-sidebar" class="box solid" onclick="changeColor('#2c3cce')"></div>
+            <div id="black" class="box solid" onclick="changeColor('black')"></div>
+            <div id="dark-cream" class="box solid" onclick="changeColor('#d6ffe8')"></div>
+            <div id="blue-green" class="box solid" onclick="changeColor('#3affb9')"></div>
+            <div id="blue-grey" class="box solid" onclick="changeColor('#6c7093')"></div>
+            <div id="light-orange" class="box solid" onclick="changeColor('#FF4740')"></div>
+    
+            <div id="grad-1" class="box grad" onclick="changeColor('linear-gradient(118deg, rgba(42,42,238,1) 0%, rgba(67,67,212,1) 50%, rgba(0,212,255,1) 100%)')"></div>
+            <div id="grad-2" class="box grad" onclick="changeColor('linear-gradient(302deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)')"></div>
+            <div id="grad-3" class="box grad" onclick="changeColor('linear-gradient(126deg, rgba(255,0,0,1) 0%, rgba(131,58,180,1) 100%)')"></div>
+            <div id="grad-4" class="box grad" onclick="changeColor('linear-gradient(54deg, rgba(238,174,202,1) 0%, rgba(224,36,135,1) 50%, rgba(224,36,36,1) 100%)')"></div>
+            <div id="grad-5" class="box grad" onclick="changeColor('linear-gradient(45deg, rgba(251,246,0,1) 0%, rgba(253,82,45,1) 100%)')"></div>
+            <div id="grad-6" class="box grad" onclick="changeColor('linear-gradient(126deg, rgba(255,0,0,1) 10%, rgba(0,255,249,1) 85%)')"></div>
+        </div>
+
+    </section>
+    
+    <div class="send">
+        <button id='changebg'class="changebg"></button>
+        <form action="#" id="send-container" method="POST">
+            <input type="text" name="messageInp" id="messageInp" placeholder="Enter Your Message" required>
+            <!-- <textarea type="text" name="messageInp" id="messageInp" placeholder="Enter Your Message Here" required></textarea> -->
+            <button class="btn" type="submit"><i class="far fa-paper-plane"></i></button>
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('#messageInp').emojioneArea();
+        })
+    </script>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+  <script src="js/copy.js"></script>
+
+
+</body>
+</html>
+
+<!-- <i class="fas fa-user"></i> -->
+<!-- <i class="fas fa-user-times"></i> -->
