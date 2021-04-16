@@ -149,6 +149,9 @@ form.addEventListener('submit',(e)=>{
     socket.emit('send',message)
     messageInput.value=''
     messageInput.focus();
+    
+    document.querySelector('.emojionearea-editor').innerText='';
+    document.querySelector('.emojionearea-editor').focus();
 })
 
 socket.on('receive',data=>{
