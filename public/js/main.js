@@ -192,8 +192,6 @@ const tags=document.getElementById('tags');
 imgBtn.addEventListener('click',()=> {
     tags.classList.toggle('img');
     tags.classList.toggle('clr');
-    // imgBtn.classList.toggle('active');
-    // clrBtn.classList.toggle('active');
 
     image.classList.toggle('active');
     clrs.classList.toggle('active');
@@ -202,8 +200,7 @@ imgBtn.addEventListener('click',()=> {
 clrBtn.addEventListener('click',()=> {
     tags.classList.toggle('clr');
     tags.classList.toggle('img');
-    // imgBtn.classList.toggle('active');
-    // clrBtn.classList.toggle('active');
+
 
     image.classList.toggle('active');
     clrs.classList.toggle('active');
@@ -231,11 +228,4 @@ function aside() {
     chatMain.classList.toggle('active');
     const aside=document.querySelector('.chat-sidebar');
     aside.classList.toggle('active');
-
-    if (aside.style.display=='block') {
-        aside.style.display='none';
-    }
-    else {
-        aside.style.display='block';
-    }
 }
