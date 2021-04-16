@@ -131,6 +131,7 @@ form.addEventListener('submit',(e)=>{
     append(`${message}`,'right')
     socket.emit('send',message)
     messageInput.value=''
+    messageInput.focus();
 })
 
 socket.on('receive',data=>{
