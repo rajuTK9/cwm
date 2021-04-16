@@ -41,6 +41,19 @@ function notification(name,message) {
     notify.play();
 }
 
+let toChange=false;
+let pff;
+
+function fontChanger(family) {
+    pff=family;
+    toChange=true;
+    
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    x.style.fontFamily=family;
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
 function append(message,position,other='') {
     function time(date=new Date) {
         var hours = date.getHours();
@@ -90,6 +103,10 @@ function append(message,position,other='') {
         fieldset.appendChild(legend);
         
         let p=document.createElement('p');
+        p.classList.add('msg-holder');
+        if(toChange) {
+            p.style.fontFamily=pff;
+        }
         p.innerText=message;
         fieldset.appendChild(p)
         
@@ -183,27 +200,60 @@ btn.addEventListener('click',()=> {
 
 const imgBtn=document.getElementById('image-btn');
 const clrBtn=document.getElementById('color-btn');
+const fontBtn=document.getElementById('font-btn');
 
 const clrs=document.getElementById('colors');
 const image=document.getElementById('images');
+const fonts=document.getElementById('fonts');
 
 const tags=document.getElementById('tags');
 
 imgBtn.addEventListener('click',()=> {
+    if(tags.classList=='font') {
+        tags.classList.toggle('font');
+        fonts.classList.toggle('active');
+    }
+    else if(tags.classList=='clr') {
+        tags.classList.toggle('clr');
+        clrs.classList.toggle('active');
+    } 
+    else{
+        return;
+    }
     tags.classList.toggle('img');
-    tags.classList.toggle('clr');
-
     image.classList.toggle('active');
-    clrs.classList.toggle('active');
 })
 
 clrBtn.addEventListener('click',()=> {
+    if(tags.classList=='img') {
+        tags.classList.toggle('img');
+        image.classList.toggle('active');
+    }
+    else if(tags.classList=='font') {
+        tags.classList.toggle('font');
+        fonts.classList.toggle('active');
+    }
+    else{
+        return;
+    }
     tags.classList.toggle('clr');
-    tags.classList.toggle('img');
-
-
-    image.classList.toggle('active');
     clrs.classList.toggle('active');
+})
+
+fontBtn.addEventListener('click',()=> {
+    if(tags.classList=='clr') {
+        tags.classList.toggle('clr');
+        clrs.classList.toggle('active');
+    } 
+    else if(tags.classList=='img') {
+        tags.classList.toggle('img');
+        image.classList.toggle('active');
+    }
+    else{
+        return;
+    }
+    tags.classList.toggle('font');
+    fonts.classList.toggle('active');
 })
 
 let body=document.getElementById('body');
@@ -212,8 +262,6 @@ function changeColor(color){
     messageContainer.style.background=color;
     body.style.background=color;
 }
-
-const inImg=document.getElementById('inImg');
 
 function changeImage(url){
     messageContainer.style.background=`url(${url}) no-repeat center center/cover`;

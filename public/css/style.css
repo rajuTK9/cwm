@@ -2,6 +2,8 @@
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=B612&family=BioRhyme&family=Concert+One&family=Fjalla+One&family=Merriweather&family=Playfair+Display&family=Poppins&family=Rakkas&family=Vollkorn&family=Yatra+One&display=swap');
+
 
 /* Fonts That We Have:
     font-family: 'Acme', sans-serif;
@@ -23,6 +25,27 @@
     font-family: 'RocknRoll One', sans-serif;
 
     font-family: 'Kanit', sans-serif;
+
+    font-family: 'B612', sans-serif;
+    font-family: 'Arvo', serif;
+
+    font-family: 'BioRhyme', serif;
+
+    font-family: 'Concert One', cursive;
+
+    font-family: 'Fjalla One', sans-serif;
+
+    font-family: 'Merriweather', serif;
+
+    font-family: 'Playfair Display', serif;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Rakkas', cursive;
+
+    font-family: 'Vollkorn', serif;
+    
+    font-family: 'Yatra One', cursive;
 */
 
 *{
@@ -381,15 +404,10 @@ tt:hover{
     position:relative;
     left:65px;
 }
-    
-#colorPicker #colors{
-    display: none;
-}
 
-#colorPicker #colors.active{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
+#colorPicker #tags.font:after{
+    position:relative;
+    left:125px;
 }
 
 #colorPicker #images{
@@ -401,6 +419,20 @@ tt:hover{
     gap:5%;
     grid-template-columns: 1fr 1fr;
     width: 268.188px;
+}
+
+#colorPicker #images img{
+    width: 100%;
+}
+    
+#colorPicker #colors{
+    display: none;
+}
+
+#colorPicker #colors.active{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
 }
 
 .colorPicker .box{
@@ -429,15 +461,6 @@ tt:hover{
     opacity: 0;
     transition: all 0.8s;
 }
-
-/* .box.solid:hover:after{
-    background-color: rgb(0, 0, 0);
-    height: 100%;
-    width: 100%;
-    border-radius: unset;
-    opacity: .1;
-    transition: all 0s;
-} */
 
 .box.solid:active:after{
     height: 0;
@@ -557,9 +580,129 @@ tt:hover{
     display:none;
 }
 
-#colorPicker #images img{
-    /* height: 204px; */
-    width: 100%;
+#colorPicker #fonts{
+    display:none;
+}
+
+#colorPicker #fonts.active{
+    display:block;
+}
+
+#colorPicker #fonts .font-area{
+    /* background-color:#2c3cce; */
+    background-color:#5037e4;
+    color:white;
+    margin:10px 0;
+    padding:10px;
+    transition: background-color .2s;
+}
+
+#colorPicker #fonts .font-area:hover{
+    /* background-color: rgb(34, 34, 187); */
+    background-color: #3c1fe4;
+}
+
+#colorPicker #fonts .font-area:active{
+    background-color: rgb(192, 59, 204);
+    transition: none;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: rgba(255, 255, 255, 0.596);
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 35px;
+    font-size: 17px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+#font-1{
+    font-family: 'B612', sans-serif;
+}
+
+#font-2{
+    font-family: 'Concert One', cursive;
+}
+
+#font-3{
+    font-family: 'Arvo', serif;
+}
+
+#font-4{
+    font-family: 'BioRhyme', serif;
+}
+
+#font-5{
+    font-family: 'Rakkas', cursive;
+}
+
+#font-6{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#font-7{
+    font-family: 'Merriweather', serif;
+}
+
+#font-8{
+    font-family: 'Playfair Display', serif;
+}
+
+#font-9{
+    font-family: 'Poppins', sans-serif;
+}
+
+#font-10{
+    font-family: 'Vollkorn', serif;
+}
+
+#font-11{
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#font-12{
+    font-family: 'calibri';
+}
+
+#font-13{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#font-14{
+    font-family:'Times New Roman', Times, serif;
 }
 
 .send{
@@ -859,6 +1002,14 @@ input:focus{
     #form .wrapper .btn{
         font-size: 25px;
     }
+
+    #snackbar {
+        margin-left: 0;
+        padding: 10px;
+        left: 10px;
+        right: 10px;
+        font-size: 16px;
+      }
 }
 
 @media (max-width:280px) {

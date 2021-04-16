@@ -63,7 +63,7 @@
                  Members:
             </h3>
             <ul id="users"></ul>
-            <a href="#">About Us</a>
+            <!-- <a href="#">About Us</a> -->
         </div>
 
         <div class="container" id="container"></div>
@@ -73,23 +73,24 @@
         <div id="tags" class='img'>
             <button id='image-btn' class="tags active">Images</button>
             <button id='color-btn' class="tags">Colors</button>
+            <button id='font-btn' class="tags">Fonts</button>
         </div>
 
         <div id="images" class="active">
-            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?superbikes`)' src="https://source.unsplash.com/1600x900/?superbikes" alt="Image">
-            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?cameras`)' src="https://source.unsplash.com/1600x900/?cameras" alt="Image">
-            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?smartphones`)' src="https://source.unsplash.com/1600x900/?smartphones" alt="Image">
-            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?computer,apple`)' src="https://source.unsplash.com/1600x900/?computer,apple" alt="Image">
-            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?gaming,gta`)' src="https://source.unsplash.com/1600x900/?gaming,gta" alt="Image">
-            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?girls`)' src="https://source.unsplash.com/1600x900/?girls" alt="Image">
-            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?artistic`)' src="https://source.unsplash.com/1600x900/?artistic" alt="Image">
-            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?cars`)' src="https://source.unsplash.com/1600x900/?cars" alt="Image">
-            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?landmarks,statues`)' src="https://source.unsplash.com/1600x900/?landmarks,statues" alt="Image">
-            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?mythology,god`)' src="https://source.unsplash.com/1600x900/?mythology,god" alt="Image">
-            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/collection/190727/1600x900`)' src="https://source.unsplash.com/collection/190727/1600x900" alt="Image">
-            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/daily`)' src="https://source.unsplash.com/daily" alt="Image">
-            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/weekly?car`)' src="https://source.unsplash.com/weekly?car" alt="Image">
-            <img id='inImg' onclick='changeImage(`https://source.unsplash.com/random/`)' src="https://source.unsplash.com/random/" alt="Image">
+            <img class='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?superbikes`)' src="https://source.unsplash.com/1600x900/?superbikes" alt="Image">
+            <img class='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?cameras`)' src="https://source.unsplash.com/1600x900/?cameras" alt="Image">
+            <img class='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?smartphones`)' src="https://source.unsplash.com/1600x900/?smartphones" alt="Image">
+            <img class='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?computer,apple`)' src="https://source.unsplash.com/1600x900/?computer,apple" alt="Image">
+            <img class='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?gaming,gta`)' src="https://source.unsplash.com/1600x900/?gaming,gta" alt="Image">
+            <img class='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?girls`)' src="https://source.unsplash.com/1600x900/?girls" alt="Image">
+            <img class='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?artistic`)' src="https://source.unsplash.com/1600x900/?artistic" alt="Image">
+            <img class='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?cars`)' src="https://source.unsplash.com/1600x900/?cars" alt="Image">
+            <img class='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?landmarks,statues`)' src="https://source.unsplash.com/1600x900/?landmarks,statues" alt="Image">
+            <img class='inImg' onclick='changeImage(`https://source.unsplash.com/1600x900/?mythology,god`)' src="https://source.unsplash.com/1600x900/?mythology,god" alt="Image">
+            <img class='inImg' onclick='changeImage(`https://source.unsplash.com/collection/190727/1600x900`)' src="https://source.unsplash.com/collection/190727/1600x900" alt="Image">
+            <img class='inImg' onclick='changeImage(`https://source.unsplash.com/daily`)' src="https://source.unsplash.com/daily" alt="Image">
+            <img class='inImg' onclick='changeImage(`https://source.unsplash.com/weekly?car`)' src="https://source.unsplash.com/weekly?car" alt="Image">
+            <img class='inImg' onclick='changeImage(`https://source.unsplash.com/random/`)' src="https://source.unsplash.com/random/" alt="Image">
         </div>
 
         <div id="colors">
@@ -113,6 +114,42 @@
             <div id="grad-4" class="box grad" onclick="changeColor('linear-gradient(54deg, rgba(238,174,202,1) 0%, rgba(224,36,135,1) 50%, rgba(224,36,36,1) 100%)')"></div>
             <div id="grad-5" class="box grad" onclick="changeColor('linear-gradient(45deg, rgba(251,246,0,1) 0%, rgba(253,82,45,1) 100%)')"></div>
             <div id="grad-6" class="box grad" onclick="changeColor('linear-gradient(126deg, rgba(255,0,0,1) 10%, rgba(0,255,249,1) 85%)')"></div>
+        </div>
+
+        <div id='fonts' class="">
+            <div onclick="fontChanger('B612')" class="font-area" id="font-1">B612</div>
+
+            <div onclick="fontChanger('Concert One')" class="font-area" id="font-2">Concert One</div>
+
+            <div onclick="fontChanger('Arvo')" class="font-area" id="font-3">Arvo</div>
+
+            <div onclick="fontChanger('BioRhyme')" class="font-area" id="font-4">BioRhyme</div>
+
+            <div onclick="fontChanger('Rakkas')" class="font-area" id="font-5">Rakkas</div>
+
+            <div onclick="fontChanger('Fjalla One')" class="font-area" id="font-6">Fjalla One</div>
+
+            <div onclick="fontChanger('Merriweather')" class="font-area" id="font-7">Merriweather</div>
+
+            <div onclick="fontChanger('Playfair Display')" class="font-area" id="font-8">Playfair Display</div>
+
+            <div onclick="fontChanger('Poppins')" class="font-area" id="font-9">Poppins</div>
+
+            <div onclick="fontChanger('Vollkorn')" class="font-area" id="font-10">Vollkorn</div>
+
+            <div onclick="fontChanger('Verdana')" class="font-area" id="font-11">Verdana</div>
+
+            <div onclick="fontChanger('calibri')" class="font-area" id="font-12">calibri</div>
+
+            <div onclick="fontChanger('Arial')" class="font-area" id="font-13">Arial</div>
+
+            <div onclick="fontChanger('Times New Roman')" class="font-area" id="font-14">Times New Roman</div>
+        </div>
+
+        <div id="snackbar">
+            New font is successfully applied. 
+            <br>
+            Send new message to see changes.
         </div>
 
     </section>
