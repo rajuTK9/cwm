@@ -15,6 +15,18 @@ const { username, room } = Qs.parse(location.search, {
 
 const socket=io();
 
+
+let isMuted=false;
+document.getElementById('mute').addEventListener('click', ()=>{
+    document.getElementById('mute').classList.toggle('mute');
+    if(isMuted) {   isMuted=false;   }
+    else {  isMuted=true;   }
+})
+
+function audioChecker(track) {
+    if(!isMuted) {  track.play();   }
+}
+
 //join chat room
 socket.emit('joinRoom',{ username ,room });
 
@@ -38,7 +50,7 @@ function notification(name,message) {
             this.close();
         }
     });
-    notify.play();
+    audioChecker(notify);
 }
 
 let toChange=false;
@@ -123,11 +135,11 @@ function append(message,position,other='') {
 
     if(position == 'left') {
         if(document.visibilityState=='visible') {
-            receive.play();
+            audioChecker(receive);
         }
     }
     else if(position == 'right') {
-        send.play();
+        audioChecker(send);
     }
 }
 
@@ -137,7 +149,7 @@ socket.on('user-joined',name=>{
         notification('New Member',name);
     }
     else {
-        join.play();
+        audioChecker(join);
     }
 })
 
@@ -151,7 +163,7 @@ form.addEventListener('submit',(e)=>{
     messageInput.focus();
     
     document.querySelector('.emojionearea-editor').innerText='';
-    document.querySelector('.emojionearea-editor').focus();
+    // document.querySelector('.emojionearea-editor').focus();
 })
 
 socket.on('receive',data=>{
@@ -165,7 +177,7 @@ socket.on('left',name=>{
         notification('A Member Left',name);
     }
     else {
-        left.play()
+        audioChecker(left);
     }
 })
 
@@ -280,3 +292,7 @@ function aside() {
     const aside=document.querySelector('.chat-sidebar');
     aside.classList.toggle('active');
 }
+
+document.getElementById('sd').addEventListener('click',()=>{
+    messageContainer.scrollTop=messageContainer.scrollHeight;
+})

@@ -51,6 +51,7 @@
 *{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -230,7 +231,7 @@ header #hb.active .lines{
     text-decoration: underline;
 }
 
-h3 :first-child{
+.chat-sidebar h3 :first-child{
     margin-right: 10px;
 }
 
@@ -239,6 +240,48 @@ h3 :first-child{
     background: rgb(34 34 187);
     padding: 10px;
     font-family: 'Recursive', sans-serif;
+}
+
+.chat-sidebar .child{
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.chat-sidebar #mute{
+    /* background-image: url('https://img.icons8.com/flat-round/32/000000/mute.png'); */
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow:hidden;
+    margin:auto;
+}
+
+.chat-sidebar #mute .tomute{
+    transition: left .5s;
+    position: relative;
+    left: 0px;
+}
+
+.chat-sidebar #mute .tounmute{
+    transition: left .5s;
+    position: relative;
+    left: 40px;
+}
+
+.chat-sidebar #mute.mute .tomute{
+    left: -200px;
+}
+
+.chat-sidebar #mute.mute .tounmute{
+    left: -32px;
+}
+
+.chat-sidebar #mute.mute{
+    /* background-image: url('https://img.icons8.com/color/32/000000/room-sound.png'); */
 }
 
 .container{
@@ -335,21 +378,23 @@ tt:hover{
     /* background-color: red; */
     background: linear-gradient(110deg, rgba(9,54,247,1) 0%, rgba(65,65,209,1) 51%, rgba(0,212,255,1) 100%);
 }
-/* 
-.scrollDown{
-    display: flex;
+
+#sd{
     align-items: center;
     justify-content: center;
-    text-decoration: none;
     color: white;
-    background-color: blue;
+    background-color: #1b2fe9b0;
     height: 45px;
     width: 45px;
     padding: 5px;
-    float: right;
     font-size: 24px;
     border-radius: 100px;
-} */
+    border:none;
+    outline:none;
+    position: absolute;
+    bottom: 33px;
+    right: 5px;
+}
 
 #colorPicker{
     padding:5px;
